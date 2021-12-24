@@ -7,6 +7,7 @@ public class Main {
         Root root = gsonParser.parser();
         CardsExpDate cardsExpDate = new CardsExpDate();
         Date date = new GregorianCalendar(2020, 01, 21).getTime();
-        System.out.println(cardsExpDate.getCardsArrayExpDate(root, date));
+
+        System.out.println("Date: " +date + " \nnumber: " + cardsExpDate.getCardsArrayExpDate(root, date));
     }
 }
